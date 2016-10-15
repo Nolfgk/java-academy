@@ -24,7 +24,7 @@ public class FirstSortingAlgoritm {
         }
 
 
-
+//просто комментарий для гита
 
         return arrayToSort;
     }
