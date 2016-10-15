@@ -7,10 +7,25 @@ import java.util.Random;
  */
 public class FirstSortingAlgoritm {
 
-    final Random random = new Random();
+    public static int[] sortBubble(int[] arrayToSort) {
+
+        int[] sortedArray = new int[arrayToSort.length];
+        //create array that we will return
+
+        for (int j = 1; j < arrayToSort.length; j++){
+            for (int i = 0; i < (arrayToSort.length - j); i++) {
+                if (arrayToSort[i] > arrayToSort[i + 1]) {
+                    int buffer = arrayToSort[i];
+                    arrayToSort[i] = arrayToSort[i + 1];
+                    arrayToSort[i + 1] = buffer;
+                }
+                //заполняем новый массив
+            }
+        }
 
 
 
 
-
+        return arrayToSort;
+    }
 }
